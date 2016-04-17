@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %} Moja stran {% endblock title %}</title>
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <div id="nav">
+            <div id="nav_wrapper">
+
+                <ul>
+                    <li><a href="/">Domov</a></li>
+                    <li><a href="/about">O meni</a></li>
+                    <li><a href="/projekti">Projekti</a>
+                        <ul>
+                            <li><a href="/projekti/cas">Trenutni čas</a> </li>
+                            <li><a href="/projekti/loto">Loterija</a> </li>
+                            <li><a href="/projekti/kalkulator">Kalkulator</a> </li>
+                            <li><a href="/projekti/ugani">Ugani številko</a> </li>
+                            <li><a href="/projekti/mesto">Ugani glavno mesto</a> </li>
+                            <li><a href="/projekti/dna">DNA analizator</a> </li>
+                            <li><a href="/projekti/guestbook">Guestbook</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/kontakt">Kontakt</a></li>
+                    <li><a href="/registracija">Registracija</a></li>
+                    <li><a href="/login">LogIn</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        {% block vsebina %}
+
+        <div class="vsebina">
+            <h1>Moja internetna stran ... Dobrodošli!</h1>
+            <p>To je moja spletna stran, ki sem jo ustvaril na podlagi znanja, ki sem ga pridobil na tečaju "Web Design", organizator SmartNinja. Predavatelj Rok Jaklič, ki se ukvarja s programerstvom že 20 let je vso potrebno znanje na okolju prijazen način predal zvestim učencem in seveda tudi meni. Hvala Rok!  </p>
+            <p>Čeprav pred tem tečajem nisem imel pojma, kako se sploh zgradi internetna stran in sem imel predstavo, da je pa to ena najbolj zaJ... stvari na svetu, sem skozi vse te ure inštruiranja spoznal, da pa to ni ravno tako težko in da je vse mogoče ... evo v času 17 tečajev sem že pridobil znanje s katerim že lahko ustvarjam internetne strani ... bravo jest :D</p>
+        </div>
+
+        {% endblock vsebina %}
+
+    </body>
+</html>

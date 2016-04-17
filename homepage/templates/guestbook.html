@@ -1,0 +1,33 @@
+{% extends "base_hp.html" %}
+
+{% block title %}GuestBook{% endblock title %}
+
+{% block vsebina %}
+<div class="me">
+    <h1>Dobrodošli!</h1>
+    <h4>Podajte svoje menenje o bivanju pri nas. Ste bili zadovoljni z našimi storitvami,
+        napišite kritike glede naših stporitev in na osnovi tega bomo poskrbeli, da izboljšamo naše storitve
+        in zagotovimo še ugodnejše bivanje pri nas.</h4>
+        <form action="/projekti/guestbook" method="post">
+            <input  placeholder="Vnesi ime" type="text" name="ime" value=""><br>
+            <br>
+            <input  placeholder="Vnesi priimek" type="text" name="priimek" value=""><br>
+            <br>
+            <input  placeholder="Vnesi email naslov" type="text" name="email" value=""><br>
+            <br>
+            <textarea  placeholder="Vnesi sporočilo" type="text" name="sporocilo" value="" style="width: 600px; height: 350px; "></textarea>
+            <br>
+            <br>
+            <button type="submit">Objavi</button>
+        </form>
+    <p>Vaša sporočila bomo vzeli smrtno resno. V kolikor bo v vaših sporočilih, žaljiva, diskrimitorna,
+        vulgarna ali poniževalna vsebina, bodo sledile sankcije!</p>
+
+    {% for vnos in output %}
+
+    <h3>{{vnos.ime}} {{vnos.priimek}}</h3><h4>{{vnos.email}}, {{vnos.nastanek}}</h4>
+    <p>{{vnos.sporocilo}}</p>
+
+    {% endfor %}
+</div>
+{% endblock vsebina %}

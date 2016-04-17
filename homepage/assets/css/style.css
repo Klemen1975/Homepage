@@ -1,0 +1,102 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 18px;
+    background-color: #DDD7D7;
+    width: 100%;
+}
+
+#nav {
+    background-color: #BAC8EF;
+    font-family: Helvetica;
+    height: 40px;
+}
+
+#nav_wrapper {
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+    padding-top: 9px;
+}
+
+#nav ul {
+    link-style-type: none;
+    padding-left: 200px;
+    margin: 0;
+    position: relative;
+    
+}
+
+#nav ul li {
+    display: inline-block;
+    color: white;
+    padding-left: 70px;
+}
+
+#nav ul li:hover {
+    color: dodgerblue;
+}
+
+#nav ul li a,visited {
+    text-decoration: none;
+    color: white;
+}
+
+#nav ul li a:hover {
+    color: dodgerblue;
+}
+
+#nav ul li:hover ul {
+    display: block;
+}
+
+#nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #BAC8EF;
+    font-size: 15px;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#nav ul ul li {
+    display: block;
+    padding-left:0;
+}
+
+.vsebina {
+    padding-left: 270px;
+    padding-right: 270px;
+    padding-top: 100px;
+}
+.me {
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+}
+
+#date {
+    border-radius: 30px;
+    font-family: Helvetica;
+    text-align: center;
+    width: 350px;
+    border-collapse: collapse;
+}
+
+.lotko {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    text-align: center;
+    }
+
+.lotkod {
+    background-color: #FF6464;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    text-align: center;
+    }

@@ -1,0 +1,22 @@
+{% extends "base_hp.html" %}
+
+{% block title %}DNA analizator{% endblock title %}
+
+{% block vsebina %}
+
+<div class="me">
+
+    <h3>V spodnje polje vnesi DNA </h3>
+    <form action="/projekti/dna" method="post">
+                    <textarea placeholder="Vnesi DNA zapis" name="dna"></textarea>
+                    <button type="submit">OK</button>
+    </form>
+    <p>Splol je : {{spol}}</p>
+    <p>Rasa je : {{rasa}}</p>
+    <p>Barva oči je : {{oci}}</p>
+    <p>Barva las je : {{lasje}}</p>
+    <p>Oblika obraza je : {{obraz}}</p>
+
+</div>
+
+{% endblock vsebina %}

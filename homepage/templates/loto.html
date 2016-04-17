@@ -1,0 +1,26 @@
+{% extends "base_hp.html" %}
+
+{% block title %}Loterija{% endblock title %}
+
+{% block vsebina %}
+
+<div class="me">
+
+    <h3>Naključno zgenerirane številko so:</h3>
+
+    <table style="border-spacing: 10px;">
+        <tr style="padding-left: 20 px; ">
+            <td class="lotko">{{ena}}</td>
+            <td class="lotko">{{dva}}</td>
+            <td class="lotko">{{tri}}</td>
+            <td class="lotko">{{stiri}}</td>
+            <td class="lotko">{{pet}}</td>
+            <td class="lotkod">{{dod1}}</td>
+            <td class="lotkod">{{dod2}}</td>
+        </tr>
+    </table>
+    <p>Sedaj pa hitro vplačati listek in veliko sreče vam želim.</p>
+
+</div>
+
+{% endblock vsebina %}

@@ -1,0 +1,19 @@
+{% extends "base_hp.html" %}
+
+{% block title %}Ugani številko{% endblock title %}
+
+{% block vsebina %}
+
+<div class="me">
+
+    <h3>Vpiši številko med 1 in 100 in bomo videli ali si uganil skrito število</h3>
+    <form action="/projekti/ugani" method="post">
+                    <input type="text" value="" id="stevilka" name="stevilka" placeholder="Vnesi število">
+                    <button type="submit">Vnos</button>
+    </form>
+
+    <p>{{odgovor}}</p>
+
+</div>
+
+{% endblock vsebina %}

@@ -1,0 +1,23 @@
+{% extends "base_hp.html" %}
+
+{% block title %}Registracija{% endblock title %}
+
+{% block vsebina %}
+
+<div class="me">
+
+    <h1>Registracija novega uporabnika</h1>
+
+    <form action="/registracija" method="post">
+        <input placeholder="Vnesi svoje ime" name="ime"> <br>
+        <input placeholder="Vnesi svoj priimek" name="priimek"> <br>
+        <input placeholder="Vnesi svoj email" name="email" type="email"> <br>
+        <input placeholder="Vnesi svoje geslo" name="geslo" type="password"> <br>
+        <input placeholder="Ponovno vnesi geslo" name="ponovno_geslo" type="password"> <br>
+
+        <button type="submit">Registriraj se</button>
+    </form>
+
+</div>
+
+{% endblock vsebina %}
